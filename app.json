@@ -1,0 +1,12 @@
+{
+  "name": "reac-native-redux-thunk-todo-list",
+  "displayName": "reac-native-redux-thunk-todo-list",
+  "expo": {
+    "name": "reac-native-redux-thunk-todo-list",
+    "slug": "reac-native-redux-thunk-todo-list",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
