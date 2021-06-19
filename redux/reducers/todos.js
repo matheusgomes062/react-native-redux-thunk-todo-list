@@ -22,6 +22,11 @@ export default function (state = initialState, action) {
     }
     case EDIT_TODO: {
       const { id, task } = action.payload;
+      console.log(state);
+      if (!task || /^\s*$/.test(task)) {
+        console.log('caiu no test');
+        return;
+      }
       return {
         ...state,
         todo_list: state.todo_list.map((item) => {

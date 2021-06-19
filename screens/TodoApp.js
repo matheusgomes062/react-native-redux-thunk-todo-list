@@ -98,14 +98,14 @@ const TodoApp = ({ todo_list, addTodo, deleteTodo }) => {
                     </View>
                   )}
                 />
-                <Card.Content>
+                <Card.Content key={item.id}>
                   {isEditing ? (
                     <TextInput
                       mode="outlined"
                       label="Task"
                       value={taskEdit}
                       onChangeText={(taskEdit) => setTaskEdit(taskEdit)}
-                      onSubmitEditing={(taskEdit) => setTaskEdit(taskEdit)}
+                      onSubmitEditing={(taskEdit) => handleEditTodo(item.id)}
                     />
                   ) : (
                     <Paragraph>{item.task}</Paragraph>
